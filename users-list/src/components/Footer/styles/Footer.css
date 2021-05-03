@@ -1,6 +1,6 @@
 footer {
   background-color: #9f9f9f;
-  padding: 20px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,6 +11,6 @@ footer {
 }
 
 footer img, footer span {
-  margin: 10px auto;
+  margin: 5px auto;
 }
 /*# sourceMappingURL=Footer.css.map */

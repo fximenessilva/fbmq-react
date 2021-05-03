@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import UsersList from './components/UsersList/UsersList';
 import Footer from './components/Footer/Footer';
@@ -9,10 +10,16 @@ import './styles/App.css';
 function App() {
   return (
     <>
-      <Header />
-      <UsersList />
-      <CreateUser />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route path="/userslist" exact component={UsersList} />
+          <Route path="/createuser" exact component={CreateUser} />
+          <Route path="/deleteuser" exact />
+
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

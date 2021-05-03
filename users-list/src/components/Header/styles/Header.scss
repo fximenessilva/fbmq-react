@@ -1,13 +1,63 @@
 header{
     background-color: #337ab7;
-    height: 129px;
+    height: 130px;
     width: 100%;
     display: flex;
     align-items: center;
-    
+    position: fixed;
+    top: 0;    
 
     .logo-wrapper{
         margin-left: 20px;
     }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+
+        li{
+            color: rgb(230, 230, 230);
+            margin: 10px;
+            cursor: pointer;
+            padding: 10px;
+            transition: 0.3s;
+            font-size: 1.1em;
+
+        }
+            li:hover{
+                background-color: #4f81ad;
+                transition: 0.3s;
+            }
+        
+    }
     
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-sections{
+        ul{
+            padding-left: 20px;
+            li{
+                font-size: 0.7em; 
+                margin: 3px
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .nav-sections{
+        ul{
+            li{
+                font-size: 0.6em; 
+                margin: 0px
+            }
+        }
+    }
+    .logo-wrapper{
+        margin-left: 5px;
+        img{
+            width: 100px;
+        }
+    }
 }
