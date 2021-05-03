@@ -1,6 +1,7 @@
+@import '../../../styles/utils';
+
 .home-wrapper{
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     align-items: center;
     text-align: center;
     margin-top: 150px;
@@ -26,8 +27,7 @@
     }
 
     .post-wrapper{
-        display: flex;
-        flex-direction: column;
+        @include flex(column);
         margin: 20px 0px;
         max-width: 90%;
     }
