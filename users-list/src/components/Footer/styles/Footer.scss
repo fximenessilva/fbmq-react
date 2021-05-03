@@ -1,8 +1,9 @@
+@import '../../../styles/utils';
+
 footer{
-    background-color: rgb(159, 159, 159);
+    @include flex(column);
+    background-color: $softGray;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
 
     img, span{
         margin: 5px auto

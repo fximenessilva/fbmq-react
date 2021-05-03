@@ -1,6 +1,4 @@
 footer {
-  background-color: #9f9f9f;
-  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,6 +6,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #9f9f9f;
+  padding: 30px;
 }
 
 footer img, footer span {

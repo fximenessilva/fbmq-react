@@ -1,5 +1,7 @@
+@import '../../../styles/utils';
+
 header{
-    background-color: #337ab7;
+    background-color: $fbmqBlue;
     height: 130px;
     width: 100%;
     display: flex;
@@ -16,17 +18,17 @@ header{
         flex-direction: row;
 
         li{
-            color: rgb(230, 230, 230);
+            color: $darkerWhite;
             margin: 10px;
             cursor: pointer;
             padding: 10px;
-            transition: 0.3s;
+            transition: $transition;
             font-size: 1.1em;
 
         }
             li:hover{
-                background-color: #4f81ad;
-                transition: 0.3s;
+                background-color: $fbmqBlueHover;
+                transition: $transition;
             }
         
     }

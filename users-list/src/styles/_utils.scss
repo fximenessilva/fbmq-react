@@ -1,0 +1,74 @@
+$fbmqBlue: #337ab7;
+$fbmqBlueHover: #4f81ad;
+$transition: 0.3s;
+$gray: rgba(63, 63, 63, 0.6);
+$softGray: rgb(159, 159, 159);
+$darkerWhite: rgb(230, 230, 230);
+
+@mixin formWrapper(){
+    margin: 170px 0px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin formTitle(){
+        font-size: 1.5em;
+        border-bottom: 1px solid $gray;
+        width: 200px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom:30px;
+        color:$gray;
+        margin-bottom: 50px;
+}
+
+@mixin form(){
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.75);
+    padding: 30px 50px;
+}
+
+@mixin input(){
+            margin: 10px 0px;
+            border: none;
+            border-bottom: 1px solid rgba(63, 63, 63, 0.445);
+            background-color: transparent;
+            outline: none;
+            width: 98%;
+            font-size: 1em;
+            padding: 8px 4px;
+}
+
+@mixin formButton($marginTop){
+            margin: $marginTop 0px 10px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: $fbmqBlue;
+            color: white;
+            transition: 0.3s;
+            font-size: 1em;
+}
+
+@mixin createdDeletedSuccess(){
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.75);
+    padding: 30px 50px;
+    margin: 200px auto 260px;
+    width: 200px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.75);
+    padding: 30px 50px;
+}
+
+@mixin flex($direction){
+    display: flex;
+    flex-direction: $direction;
+}

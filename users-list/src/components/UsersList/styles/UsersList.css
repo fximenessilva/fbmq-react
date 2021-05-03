@@ -14,12 +14,12 @@
 
 .usersList-wrapper h2 {
   font-size: 2em;
-  border-bottom: 1px solid #3f3f3f;
+  border-bottom: 1px solid rgba(63, 63, 63, 0.6);
   width: 100px;
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
-  color: #3f3f3f;
+  color: rgba(63, 63, 63, 0.6);
 }
 
 .usersList-wrapper .userCard {
