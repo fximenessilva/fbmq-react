@@ -2,43 +2,12 @@ header{
     background-color: #337ab7;
     height: 129px;
     width: 100%;
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: 80% 20%;
-
+    
 
     .logo-wrapper{
         margin-left: 20px;
-    }
-    .input-wrapper{
-        .inputSelected{
-            display: block;
-        }
-
-        input{
-            padding-left: 10px;
-            background-color: rgb(255, 255, 255);
-            border: none;
-            outline: none;
-            border-bottom: 1px solid rgb(147, 147, 147);
-            border-radius: 3px;
-            height: 2rem;
-            width: 160px;
-            display: none;
-            color:rgb(97, 97, 97)
-        }
-        .material-icons{
-            position: fixed;
-            right: 100px;
-            top: 48px;
-            color: rgb(215, 215, 215);
-            font-size: 35px;
-            display: block;
-            cursor: pointer;
-        }
-        .searchIcon-unSelect{
-            display: none;
-        }
     }
     
 }
