@@ -21,6 +21,9 @@ const userReducer = (state = {}, action) => {
     case actionTypes.CREATE_USER_ERROR:
       return { ...state, loading: false, error: action.error };
 
+    case actionTypes.RESET_CREATE_USER:
+      return { ...state, loading: false, user: {} };
+
     default:
       return state;
   }

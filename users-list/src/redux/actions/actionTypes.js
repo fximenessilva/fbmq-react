@@ -7,6 +7,8 @@ const actionTypes = {
   CREATE_USER_ERROR: 'CREATE_USER_ERROR',
   CREATE_USER_SUCCESS: 'CREATE_USER_SUCCESS',
 
+  RESET_CREATE_USER: 'RESET_CREATE_USER',
+
 };
 
 export default actionTypes;
