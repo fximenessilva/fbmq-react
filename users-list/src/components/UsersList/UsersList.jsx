@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable no-undef */
@@ -5,6 +6,8 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { requestUsers } from '../../redux/actions/userActions';
+import EmptyUsers from './EmptyUsers';
+
 import './styles/UsersList.css';
 
 const UsersList = () => {
@@ -16,7 +19,7 @@ const UsersList = () => {
 
   const { users } = userList;
   if (users?.data) {
-    console.log(users.data);
+    console.log(users);
   }
 
   function setMin() {
@@ -26,7 +29,7 @@ const UsersList = () => {
   }
 
   function setMax() {
-    if (users.data?.length === 6) {
+    if (users?.data?.length) {
       setPage(page + 1);
     }
   }
@@ -37,7 +40,7 @@ const UsersList = () => {
   return (
 
     <div className="usersList-wrapper">
-      {users?.data && users?.data.length && users?.data.map((user) => (
+      {users?.data?.length ? (users?.data.map((user) => (
         <li key={user.id}>
           <div key={user.id} className="userCard">
             <div className="avatar-wrapper">
@@ -56,7 +59,7 @@ const UsersList = () => {
 
           </div>
         </li>
-      ))}
+      ))) : <EmptyUsers />}
       <div className="navigation-btn-wrapper">
         <span role="button" id="beforePageBtn" onClick={() => setMin()} className="material-icons">
           navigate_before
