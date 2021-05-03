@@ -1,0 +1,34 @@
+.home-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+
+    img{
+        max-width: 90%;
+    }
+
+    span{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    margin: 10px 0px;
+    font-weight: 400;
+    
+    }
+    p{
+        color: #848789;
+        font-weight: 400;
+        
+    }
+
+    .post-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+        max-width: 90%;
+    }
+}
