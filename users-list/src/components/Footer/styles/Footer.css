@@ -1,0 +1,16 @@
+footer {
+  background-color: #9f9f9f;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer img, footer span {
+  margin: 10px auto;
+}
+/*# sourceMappingURL=Footer.css.map */
