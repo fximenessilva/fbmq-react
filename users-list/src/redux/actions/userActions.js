@@ -67,3 +67,37 @@ export function resetCreateUser() {
     type: actionTypes.RESET_CREATE_USER,
   };
 }
+
+function deleteUserSuccess(user) {
+  return {
+    type: actionTypes.DELETE_USER_SUCCESS,
+    user,
+  };
+}
+
+function deleteUserFail(error) {
+  return {
+    type: actionTypes.DELETE_USER_ERROR,
+    error,
+  };
+}
+
+export function deleteUser(id) {
+  return async (dispatch) => {
+    const endpoint = `https://reqres.in/api/users/${id}`;
+    try {
+      dispatch({ type: actionTypes.DELETE_USER_REQUEST });
+
+      const { data } = await axios.delete(endpoint);
+      dispatch(deleteUserSuccess(data));
+    } catch (error) {
+      dispatch(deleteUserFail(error));
+    }
+  };
+}
+
+export function resetDeleteUser() {
+  return {
+    type: actionTypes.RESET_DELETE_USER,
+  };
+}

@@ -1,0 +1,159 @@
+.deleteUser-wrapper {
+  margin: 170px 0px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.deleteUser-wrapper h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #3f3f3f;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #3f3f3f;
+  margin-bottom: 50px;
+}
+
+.deleteUser-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75);
+  padding: 30px 50px;
+}
+
+.deleteUser-wrapper form input {
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid rgba(63, 63, 63, 0.445);
+  background-color: transparent;
+  outline: none;
+  width: 98%;
+  font-size: 1em;
+  padding: 8px 4px;
+}
+
+.deleteUser-wrapper form input::-webkit-input-placeholder {
+  color: rgba(63, 63, 63, 0.445);
+}
+
+.deleteUser-wrapper form input:-ms-input-placeholder {
+  color: rgba(63, 63, 63, 0.445);
+}
+
+.deleteUser-wrapper form input::-ms-input-placeholder {
+  color: rgba(63, 63, 63, 0.445);
+}
+
+.deleteUser-wrapper form input::placeholder {
+  color: rgba(63, 63, 63, 0.445);
+}
+
+.deleteUser-wrapper form button {
+  margin: 15px 0px 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #3379b7;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+.deleteUser-wrapper form button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #4f81ad;
+}
+
+.deleteUser-wrapper form div {
+  margin-top: 20px;
+}
+
+.deleteUser-wrapper form div p {
+  color: rgba(63, 63, 63, 0.892);
+  font-size: 0.6em;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.deleted-success {
+  -webkit-box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75);
+  padding: 30px 50px;
+  margin: 200px auto 260px;
+  width: 200px;
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.75);
+  padding: 30px 50px;
+}
+
+.deleted-success span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.deleted-success .backHome-btn {
+  margin: 40px 0px 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #3379b7;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+.deleted-success .backHome-btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #4f81ad;
+}
+
+.deleted-success p {
+  margin-top: 3px;
+}
+
+.deleted-success span {
+  margin-left: 5px;
+}
+
+a button {
+  width: 100%;
+}
+/*# sourceMappingURL=DeleteUser.css.map */

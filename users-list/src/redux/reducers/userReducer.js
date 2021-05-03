@@ -21,8 +21,20 @@ const userReducer = (state = {}, action) => {
     case actionTypes.CREATE_USER_ERROR:
       return { ...state, loading: false, error: action.error };
 
+    case actionTypes.DELETE_USER_REQUEST:
+      return { ...state, loading: true };
+
+    case actionTypes.DELETE_USER_SUCCESS:
+      return { ...state, loading: false, user: action.user };
+
+    case actionTypes.DELETE_USER_ERROR:
+      return { ...state, loading: false, error: action.error };
+
     case actionTypes.RESET_CREATE_USER:
       return { ...state, loading: false, user: {} };
+
+    case actionTypes.RESET_DELETE_USER:
+      return { ...state, loading: false, user: { id: 0 } };
 
     default:
       return state;
