@@ -6,7 +6,7 @@ import './styles/Home.css';
 
 const Home = () => (
   <div className="home-wrapper">
-    <span>ONCE UPON A TIME...</span>
+    <span style={{ color: '#47c7ed' }}>ONCE UPON A TIME...</span>
     <p style={{ marginBottom: '20px' }}>in the best city in the world</p>
 
     <img src="https://trello-attachments.s3.amazonaws.com/60411589f3a6285816a489c0/608fda773e58683a37493fd0/180d033cc954aeeac335c2d077153772/main.png" alt="" />
@@ -38,7 +38,7 @@ const Home = () => (
       </ChildHome>
     </div>
 
-    <img style={{ marginBottom: '50px' }} src="https://trello-attachments.s3.amazonaws.com/60411589f3a6285816a489c0/608fda773e58683a37493fd0/86092d294393d2edd09d85374ae519db/main4.png" alt="" />
+    <img style={{ marginBottom: '80px' }} src="https://trello-attachments.s3.amazonaws.com/60411589f3a6285816a489c0/608fda773e58683a37493fd0/86092d294393d2edd09d85374ae519db/main4.png" alt="" />
 
   </div>
 );
