@@ -61,3 +61,9 @@ export function createUser(name, job) {
     }
   };
 }
+
+export function resetCreateUser() {
+  return {
+    type: actionTypes.RESET_CREATE_USER,
+  };
+}
