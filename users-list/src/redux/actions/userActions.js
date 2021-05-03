@@ -28,3 +28,36 @@ export function requestUsers(page) {
     }
   };
 }
+
+function createUserSuccess(user) {
+  return {
+    type: actionTypes.CREATE_USER_SUCCESS,
+    user,
+  };
+}
+
+function createUserFail(error) {
+  return {
+    type: actionTypes.CREATE_USER_ERROR,
+    error,
+  };
+}
+
+export function createUser(name, job) {
+  return async (dispatch) => {
+    const endpoint = 'https://reqres.in/api/users';
+    try {
+      dispatch({ type: actionTypes.CREATE_USER_REQUEST });
+
+      const config = {
+        headers: {
+          'Content-type': 'application/json',
+        },
+      };
+      const { data } = await axios.post(endpoint, { name, job }, config);
+      dispatch(createUserSuccess(data));
+    } catch (error) {
+      dispatch(createUserFail(error));
+    }
+  };
+}
