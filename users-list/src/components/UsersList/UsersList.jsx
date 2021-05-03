@@ -18,9 +18,6 @@ const UsersList = () => {
   const userList = useSelector((state) => state.userReducer);
 
   const { users } = userList;
-  if (users?.data) {
-    console.log(users);
-  }
 
   function setMin() {
     if (page > 1) {
@@ -40,6 +37,7 @@ const UsersList = () => {
   return (
 
     <div className="usersList-wrapper">
+      <h2>Users</h2>
       {users?.data?.length ? (users?.data.map((user) => (
         <li key={user.id}>
           <div key={user.id} className="userCard">
