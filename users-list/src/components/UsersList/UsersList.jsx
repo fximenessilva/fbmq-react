@@ -45,7 +45,7 @@ const UsersList = () => {
               <img src={user.avatar} alt="" />
             </div>
             <div className="user-details">
-              <span className="user-name">
+              <span id="userNameId" className="user-name">
                 {user.first_name}
                 {' '}
                 {user.last_name}

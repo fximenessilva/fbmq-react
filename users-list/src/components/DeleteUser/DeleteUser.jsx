@@ -9,7 +9,7 @@ import { deleteUser, resetDeleteUser } from '../../redux/actions/userActions';
 import './styles/DeleteUser.css';
 
 const DeleteUser = ({ history }) => {
-  const [id, setId] = useState();
+  const [id, setId] = useState('');
 
   const dispatch = useDispatch();
 
@@ -68,13 +68,14 @@ const DeleteUser = ({ history }) => {
               required
               placeholder="Type the user id number..."
               value={id}
+              id="num-id"
               onChange={(e) => setId(e.target.value)}
             />
             <div>
               <p>Please note that deleting a user could take a few seconds</p>
               <p>When the user is deleted, you will get a warning</p>
             </div>
-            <button type="submit">Delete user</button>
+            <button id="sbmtDelete" type="submit">Delete user</button>
           </form>
         </div>
       )}

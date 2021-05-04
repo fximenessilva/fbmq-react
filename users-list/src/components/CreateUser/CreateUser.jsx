@@ -50,6 +50,7 @@ const CreateUser = ({ history }) => {
                 onClick={reset}
                 className="backHome-btn"
                 type="button"
+                id="reset-btn"
               >
                 Back
               </button>
@@ -74,6 +75,7 @@ const CreateUser = ({ history }) => {
                 placeholder="Type your name..."
                 type="text"
                 value={name}
+                id="name-input"
                 onChange={(e) => setName(e.target.value)}
               />
 
@@ -82,13 +84,14 @@ const CreateUser = ({ history }) => {
                 placeholder="Type your job..."
                 type="text"
                 value={job}
+                id="job-input"
                 onChange={(e) => setJob(e.target.value)}
               />
               <div>
                 <p>Please note that creating a user could take a few seconds</p>
                 <p>When the user is created, you will get a warning</p>
               </div>
-              <button type="submit">Create user</button>
+              <button id="submt-form" type="submit">Create user</button>
             </form>
           </div>
         </>
