@@ -20,8 +20,8 @@ Small application that makes create, delete and get requests to reqres api
 
 1.It can be downloaded/cloned and you can start with the command after installing dependencies 
 ``` 
-npm i
 cd users-list
+npm i
 npm start
  ```
 
