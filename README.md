@@ -15,6 +15,7 @@ Small application that makes create, delete and get requests to reqres api
 - Redux
 - Hooks
 - Eslint
+- Postman
 
 ### Overview
 
