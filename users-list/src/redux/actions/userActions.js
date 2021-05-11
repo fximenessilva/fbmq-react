@@ -1,3 +1,4 @@
+/* eslint-disable no-debugger */
 /* eslint-disable import/prefer-default-export */
 import axios from 'axios';
 import actionTypes from './actionTypes';
@@ -99,5 +100,34 @@ export function deleteUser(id) {
 export function resetDeleteUser() {
   return {
     type: actionTypes.RESET_DELETE_USER,
+  };
+}
+
+function requestUserByIdSuccess(user) {
+  return {
+    type: actionTypes.GET_USER_BY_ID_SUCCESS,
+    user,
+  };
+}
+
+function requestUserByIdError(error) {
+  return {
+    type: actionTypes.GET_USER_BY_ID_ERROR,
+    error,
+  };
+}
+
+export function requestUserById(id) {
+  return async (dispatch) => {
+    const endpoint = `https://reqres.in/api/users/${id}`;
+    try {
+      dispatch({ type: actionTypes.GET_USER_BY_ID_REQUEST });
+
+      const { data } = await axios.get(endpoint);
+
+      dispatch(requestUserByIdSuccess(data));
+    } catch (error) {
+      dispatch(requestUserByIdError(error));
+    }
   };
 }

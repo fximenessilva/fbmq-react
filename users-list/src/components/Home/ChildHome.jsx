@@ -5,13 +5,13 @@ import React from 'react';
 const ChildHome = ({
   children, title, subtitle, color,
 }) => (
-  
+
   <div className="post-wrapper">
     <span style={{ color }}>{title}</span>
     <span style={{ color }}>{subtitle}</span>
     <p>{children}</p>
   </div>
-  
+
 );
 
 export default ChildHome;
