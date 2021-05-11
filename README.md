@@ -19,7 +19,7 @@ Small application that makes create, delete and get requests to reqres api
 
 ### Overview
 
-The app is uploaded on Netlify [Fbmq](https://youthful-lalande-b8e4c1.netlify.app/)
+The app is uploaded on Netlify [Fbmq](https://priceless-goldstine-9266f2.netlify.app/)
 
 1.It can be downloaded/cloned and you can start with the command after installing dependencies 
 ``` 
