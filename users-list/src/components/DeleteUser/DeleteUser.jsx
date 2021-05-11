@@ -17,7 +17,7 @@ const DeleteUser = ({ history }) => {
   const userReducer = useSelector((state) => state.userReducer);
 
   const {
-    user, loading, userById,
+    user, loading, userById, loadingUserById,
   } = userReducer;
 
   useEffect(() => {
@@ -79,7 +79,7 @@ const DeleteUser = ({ history }) => {
               onChange={(e) => setId(e.target.value)}
             />
 
-            {!userById?.data && (
+            {!userById?.data && !loadingUserById && (
               <p className="noUser-alert">
                 There is no user with id:
                 {' '}
