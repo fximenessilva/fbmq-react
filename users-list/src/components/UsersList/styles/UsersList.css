@@ -90,7 +90,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 390px) {
   .userCard {
     max-width: 300px;
   }
