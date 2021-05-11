@@ -15,7 +15,7 @@ const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
 describe('actions', () => {
-  describe('products actions', () => {
+  describe('users actions', () => {
     let fakeData;
     let fakeError;
     let store;

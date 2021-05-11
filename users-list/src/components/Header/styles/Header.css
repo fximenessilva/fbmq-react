@@ -52,7 +52,7 @@ header ul li:hover {
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 390px) {
   .nav-sections ul li {
     font-size: 0.6em;
     margin: 0px;
