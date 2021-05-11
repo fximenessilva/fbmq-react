@@ -1,11 +1,12 @@
+/* eslint-disable no-debugger */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import BounceLoader from 'react-spinners/BounceLoader';
 import { Link } from 'react-router-dom';
-import { deleteUser, resetDeleteUser } from '../../redux/actions/userActions';
+import { deleteUser, resetDeleteUser, requestUserById } from '../../redux/actions/userActions';
 import './styles/DeleteUser.css';
 
 const DeleteUser = ({ history }) => {
@@ -15,7 +16,13 @@ const DeleteUser = ({ history }) => {
 
   const userReducer = useSelector((state) => state.userReducer);
 
-  const { user, loading } = userReducer;
+  const {
+    user, loading, userById,
+  } = userReducer;
+
+  useEffect(() => {
+    dispatch(requestUserById(id));
+  }, [dispatch, id]);
 
   const reset = () => {
     dispatch(resetDeleteUser());
@@ -71,11 +78,22 @@ const DeleteUser = ({ history }) => {
               id="num-id"
               onChange={(e) => setId(e.target.value)}
             />
-            <div>
-              <p>Please note that deleting a user could take a few seconds</p>
-              <p>When the user is deleted, you will get a warning</p>
-            </div>
-            <button id="sbmtDelete" type="submit">Delete user</button>
+
+            {!userById?.data && (
+              <p className="noUser-alert">
+                There is no user with id:
+                {' '}
+                {id}
+              </p>
+            )}
+            <>
+              <div>
+                <p>Please note that deleting a user could take a few seconds</p>
+                <p>When the user is deleted, you will get a warning</p>
+              </div>
+              <button disabled={!userById?.data} id="sbmtDelete" type="submit">Delete user</button>
+            </>
+
           </form>
         </div>
       )}
